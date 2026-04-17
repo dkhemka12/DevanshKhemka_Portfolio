@@ -6,7 +6,7 @@ This is my personal portfolio website built to showcase my work, projects, and s
 
 ## Live
 
-https://your-portfolio.vercel.app
+https://devansh-khemka-portfolio.vercel.app/
 
 ---
 
@@ -44,7 +44,7 @@ These projects focus on real functionality such as APIs, authentication, and ful
 
 Email: khemkadevansh.dk@gmail.com  
 LinkedIn: https://linkedin.com/in/devanshkhemka  
-GitHub: https://github.com/dkhemka12  
+GitHub: https://github.com/dkhemka12 
 
 ---
 
