@@ -2,13 +2,15 @@ import React, { useRef, useState } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
-import Logo from "../components/Logo.jsx"; 
+import Logo from "../components/Logo.jsx";
+import siteData from "../content/siteData.js";
 
 gsap.registerPlugin(useGSAP);
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navbarRef = useRef(null);
+  const { profile } = siteData;
 
   // GSAP animation
   useGSAP(() => {
@@ -40,15 +42,13 @@ const Navbar = () => {
             className="flex flex-col gap-1.5 cursor-pointer"
           >
             <span
-              className={`w-10 lg:w-12 h-[2px] bg-white transition-all duration-300 ${
-                menuOpen ? "rotate-45 translate-y-[5px]" : ""
-              }`}
+              className={`w-10 lg:w-12 h-[2px] bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[5px]" : ""
+                }`}
             ></span>
 
             <span
-              className={`w-10 lg:w-12 h-[2px] bg-white transition-all duration-300 ${
-                menuOpen ? "-rotate-45 -translate-y-[5px]" : ""
-              }`}
+              className={`w-10 lg:w-12 h-[2px] bg-white transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[5px]" : ""
+                }`}
             ></span>
           </div>
         </div>
@@ -56,9 +56,8 @@ const Navbar = () => {
 
       {/* 🔥 Fullscreen Menu */}
       <div
-        className={`fixed z-20 inset-0 bg-black text-white flex flex-col items-center justify-center text-3xl gap-8 transition-transform duration-500 ${
-          menuOpen ? "translate-y-0" : "-translate-y-full"
-        }`}
+        className={`fixed z-20 inset-0 bg-black text-white flex flex-col items-center justify-center text-3xl gap-8 transition-transform duration-500 ${menuOpen ? "translate-y-0" : "-translate-y-full"
+          }`}
       >
         <Link to="/" className="menu-link" onClick={() => setMenuOpen(false)}>
           Home
@@ -73,7 +72,7 @@ const Navbar = () => {
         </Link>
 
         <a
-          href="mailto:johndoe@gmail.com"
+          href={`mailto:${profile.email}`}
           className="menu-link"
           onClick={() => setMenuOpen(false)}
         >
