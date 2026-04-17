@@ -3,14 +3,12 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import Logo from "../components/Logo.jsx";
-import siteData from "../content/siteData.js";
 
 gsap.registerPlugin(useGSAP);
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navbarRef = useRef(null);
-  const { profile } = siteData;
 
   // GSAP animation
   useGSAP(() => {
@@ -71,13 +69,13 @@ const Navbar = () => {
           Projects
         </Link>
 
-        <a
-          href={`mailto:${profile.email}`}
+        <Link
+          to="/contact"
           className="menu-link"
           onClick={() => setMenuOpen(false)}
         >
           Contact
-        </a>
+        </Link>
       </div>
     </>
   );
