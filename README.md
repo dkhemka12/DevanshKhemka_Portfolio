@@ -1,45 +1,43 @@
-# 🚀 React Animated Portfolio
+Devansh Khemka — Portfolio
 
-A modern and fully responsive **portfolio website** built with **React** and **GSAP animations**.  
-This project showcases smooth scroll-based animations, reusable components, and a clean UI/UX design.
+This is my personal portfolio website built to showcase my work, projects, and skills as a full stack developer. The focus was on keeping the design clean while adding smooth interactions and animations to make the experience feel more engaging.
 
----
+Live
 
-## ✨ Features
-- Responsive design
-- Smooth GSAP animations  
-- Reusable React components  
-- Optimized build for performance  
-- Easy to customize  
+Add your deployed link here:
 
----
+https://your-portfolio.vercel.app
+About
 
-## 🛠 Tech Stack
-- React 19  
-- Vite (or CRA, depending on your setup)  
-- Tailwind CSS  
-- GSAP (GreenSock Animation Platform)  
-- React Router  
+I’m a Software Product Engineering student at Kalvium (in partnership with Lovely Professional University). I built this portfolio to reflect how I approach development — by working on real projects and continuously improving both functionality and user experience.
 
----
+Instead of using a template, I built everything from scratch to understand layout, animation, and structure more deeply.
 
-## 📦 Installation & Setup
-
-Clone the project and install dependencies:
-
-# Clone repository
-git clone https://github.com/rupzweb/portfolio.git
-
-# Go inside folder
-cd react-animated-portfolio
-
-# Install dependencies
-npm install
-
-# Start development server
-npm start
+Features
+Scroll-based animations using GSAP
+Clean UI built with Tailwind CSS
+Structured content using a central data file
+Contact form with EmailJS
+Responsive design across devices
+Subtle motion and interaction effects
 
 
-## 👩‍💻 Author
-Built with ❤️ by Rupz Web (https://github.com/rupzweb)  
-- YouTube: Rupz Web (https://youtube.com/@rupz_web) 
+Projects
+Healthcare System
+Chat Application
+Weather App
+Notes App
+
+These projects focus on real functionality such as APIs, authentication, and full stack integration.
+
+Contact
+
+Email: khemkadevansh.dk@gmail.com
+
+LinkedIn: https://linkedin.com/in/devanshkhemka
+
+GitHub: https://github.com/dkhemka12
+
+Note
+
+This portfolio is still evolving as I continue to learn and build.
